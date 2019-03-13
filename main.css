@@ -17,6 +17,8 @@ html {
 }
 
 body {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -44,6 +46,7 @@ header {
 	background-size: cover;
 	background-position: 58% 0;
 	text-align: center;
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.541), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.541), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -74,6 +77,8 @@ h5 {
 .socialmedia {
 	margin-top: 5px;
 	font-size: 20px;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
 	display: inline-flex;
 }
 
@@ -110,7 +115,10 @@ nav {
 }
 
 nav ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	width: 60%;
 	padding: 20px 0;
@@ -126,6 +134,8 @@ nav li a {
 	text-align: center;
 	text-decoration: none;
 	font-weight: 700;
+	-webkit-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
 	transition: all 0.15s ease-in-out;
 }
 
@@ -178,6 +188,7 @@ nav li a:hover {
 .screenshot {
 	width: 100%;
 	height: 150px;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	position: relative;
 	background-color: var(--main-color);
@@ -190,6 +201,8 @@ nav li a:hover {
 	width: 100%;
 	height: 100%;
 	opacity: 1;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
 }
 
@@ -258,7 +271,8 @@ form input[type="submit"] {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 600px), (orientation: portrait) {
+@media screen and (max-width: 600px),
+(orientation: portrait) {
 	:root {
 		font-size: 12px;
 	}
@@ -280,6 +294,7 @@ form input[type="submit"] {
 	}
 
 	nav {
+		position: -webkit-sticky;
 		position: sticky;
 		width: 100vw;
 		height: 5vh;
@@ -289,11 +304,15 @@ form input[type="submit"] {
 		margin-right: auto;
 		margin-left: auto;
 		width: 60vw;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
 	}
+
 	nav li a {
 		color: black;
 	}
+
 	.page {
 		width: 100vw;
 	}
@@ -322,9 +341,12 @@ form input[type="submit"] {
 		margin-right: 0;
 		height: 200px;
 	}
+
 	.project p {
 		font-size: 1.4rem;
 		border-bottom: 3px solid var(--main-color);
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
 		width: fit-content;
 	}
 
@@ -333,12 +355,3 @@ form input[type="submit"] {
 		margin: 10px auto 30px 30px;
 	}
 }
-
-/* 
-DO ZROBIENIA
-
-- wprowadz tagi HTML5  
-
-- wrzucić do autoprefixera? 
-
- */
