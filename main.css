@@ -25,7 +25,7 @@ body {
 	background-color: var(--main-color);
 }
 
-.position {
+header {
 	position: fixed;
 	top: 50vh;
 	margin-top: -160px;
@@ -100,7 +100,7 @@ h5 {
 	font-size: 1rem;
 }
 
-.nav {
+nav {
 	position: fixed;
 	background: white;
 	width: calc((93 - var(--page-division))*1vw);
@@ -109,18 +109,18 @@ h5 {
 	z-index: 1;
 }
 
-.nav ul {
+nav ul {
 	display: flex;
 	justify-content: space-around;
 	width: 60%;
 	padding: 20px 0;
 }
 
-.nav li {
+nav li {
 	display: inline;
 }
 
-.nav li a {
+nav li a {
 	display: block;
 	color: var(--dark-grey);
 	text-align: center;
@@ -129,7 +129,7 @@ h5 {
 	transition: all 0.15s ease-in-out;
 }
 
-.nav li a:hover {
+nav li a:hover {
 	color: black;
 	border-bottom: 4px solid var(--main-color);
 }
@@ -272,26 +272,26 @@ form input[type="submit"] {
 		height: 60vh;
 	}
 
-	.position {
+	header {
 		position: relative;
 		margin: 0;
 		width: 100%;
 		top: 15%;
 	}
 
-	.nav {
+	nav {
 		position: sticky;
 		width: 100vw;
 		height: 5vh;
 	}
 
-	.nav ul {
+	nav ul {
 		margin-right: auto;
 		margin-left: auto;
 		width: 60vw;
 		justify-content: space-between;
 	}
-	.nav li a {
+	nav li a {
 		color: black;
 	}
 	.page {
