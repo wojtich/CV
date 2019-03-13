@@ -350,6 +350,12 @@ form input[type="submit"] {
 		width: fit-content;
 	}
 
+	.screenshot p {
+		font-size: 4rem;
+		width: 100%;
+		top: 25%;
+	}
+
 	form input[type="submit"] {
 		position: static;
 		margin: 10px auto 30px 30px;
